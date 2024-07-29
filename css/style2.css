@@ -3,13 +3,11 @@
     height:600px;
     width:80%;
     margin:0 auto;
-
 }
 .carousel__image {
-    width: 100%;
+    width: 100%; 
     height: 100%;
     object-fit: scale-down;
-
 }
 
 /*added 7/23*/ 
@@ -114,3 +112,16 @@
 }
 
 .is-hidden {display:none;}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
