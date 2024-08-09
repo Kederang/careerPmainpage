@@ -2,77 +2,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GHH/WDD Job-Seeker Services Carousel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style2.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+  <link href="./css/thumbnail-gallery.css" rel="stylesheet" />
+  <link href = "https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+
+    .caption {
+      position: absolute;
+      text-align: center;
+      font-family: "Roboto Slab", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+    .tz-gallery {
+      padding: 40px;
+    }
+
+    .tz-gallery .thumbnail {
+      padding: 0;
+      margin-bottom: 30px;
+      background-color: #fff;
+      border-radius: 4px;
+      border: none;
+      transition: 0.15s ease-in-out;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    }
+
+    .tz-gallery .thumbnail:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+
+    .baguetteBox-button {
+      background-color: transparent !important;
+    }
+
+
+    .carousel-inner>.item>a>img,
+    .carousel-inner>.item>img,
+    .img-responsive,
+    .thumbnail a>img,
+    .thumbnail>img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
 </head>
- <body>
-    <div class="carousel">
-        <button class="carousel__button carousel__button--left is-hidden">
-            <img src="./img/left-arrow.png" alt="">
-        </button>
 
-        <div class="carousel__track-container">
-            <ul class="carousel__track">
-                <li class="carousel__slide current-slide">
-                    <div><img class= "carousel__image" src="./img/GHH_slide9.png" alt=""></div>
-                    <div class="text_2"><text><h1>Resources for Helping Job-Seekers - Find and Secure Employment</h1></text></div>
-                    <div class="text"> 
-                        <text><h2>
-                            <a href ="https://career-pathways-committee.bullet.site/#:~:text=State%20Resources%20for%20Job%2DSeekers" target="_blank">Resources for Job-Seekers</a><br>
-                        </h2></text>
-                    </div>
-                </li>
-                
-                <li class="carousel__slide">
-                    <img class= "carousel__image" src="./img/GHH_2.jpg" alt="">
-                    <div class="text_2"><text><h2>GHH Resources - Connecting the Justice-Involved with Employment</h2></text></div>
-                    <div class="text">
-                        <text><h2>
-                            <a href="https://career-pathways-committee.bullet.site/#:~:text=GHH%20%26%20Community%20Resources" target="_blank">GHH Executive Committee Resources</a><br> 
-                            <!-- <a href ="https://neighborly-shield-9a9.notion.site/RACK-Card-Compiled-Support-Services-a606ab6a394d4374af3a59c7c3efd483?pvs=4">RACK Card Support Services</a><br>
-                            <a href="https://neighborly-shield-9a9.notion.site/The-American-Job-Centers-Hawai-i-The-Federal-Bonding-Program-398700a695c24b618b15b7ec4b296c0b?pvs=4">The American Job Center Resources & Federal Bond Insurance Program</a><br>-->
-                        </h2></text>
-                    </div>
-                </li>
+<body>
 
-                <li class="carousel__slide">
-                    <img class= "carousel__image" src="./img/GHH_4.png" alt="">
-                    <div class="text_2"><text><h1>Resources for Employers to Connect With or Assist Job-Seekers</h1></text></div>
-                    <div class="text">
-                        <text><h2>
-                            <a href ="https://career-pathways-committee.bullet.site/#:~:text=Re%2DEntry%20Stories-,Resources%20For%20Employers,-%26%20Stories%20Of" target="_blank">Department of Labor & Industrial Relations - Employer Resources</a>
-                        </h2></text></div>
-                </li> 
-   
-                <li class="carousel__slide">
-                    <img class= "carousel__image" src="./img/GHH_logo.jpg" alt="">
-                    <div class="text_2"><text><h1>Stories Justice-Involved Work Re-entry</h1></text></div>
-                    <div class="text"><text><h2><a href ="https://career-pathways-committee.bullet.site/#:~:text=Stories%20Of%20Justice%2DInvolved%20Re%2DEntry" target="_blank">Stories of Justice-Involved Work Re-Entry</a></h2></text></div>
-                </li> 
 
-            
-            </ul>
+  <main>
+
+
+    <section id="gallery">
+      <div class=" gallery-container container">
+        <div class="tz-gallery">
+
+          <div class="row">
+
+            <!---------------------------------------------->
+            <div data-aos="flip-up" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="1.png">
+                  <text class="caption"><h2><b><a href ="https://career-pathways-committee.bullet.site/#:~:text=State%20Resources%20for%20Job%2DSeekers" target="_blank">Click for the Resources for Job-Seekers</a></b></h2></text>
+                  <img src="1.png">
+                </a>
+              </div>
+            </div>
+
+            <!---------------------------------------------->
+
+            <div data-aos="flip-up" data-aos-delay="20" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="2.png">
+                  <text class="caption"><h2><b><a href ="https://career-pathways-committee.bullet.site/#:~:text=GHH%20%26%20Community%20Resources" target="_blank">Click for the GHH & Community Resources</a></b></h2></text>
+                  <img src="2.png">
+                </a>
+              </div>
+            </div>
+            <!---------------------------------------------->
+
+            <div data-aos="flip-up" data-aos-delay="40" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="3.png">
+                  <text class="caption"><h2><b><a href ="https://career-pathways-committee.bullet.site/#:~:text=Re%2DEntry%20Stories-,Resources%20For%20Employers,-%26%20Stories%20Of" target="_blank">Click for the Resources for Employers</a></b></h2></text>
+                  <img src="3.png">
+                </a>
+
+              </div>
+            </div>
+            <!---------------------------------------------->
+
+            <div data-aos="flip-up" data-aos-delay="60" class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <a class="lightbox" href="4.png">
+                  <text class="caption"><h2><b><a href ="https://career-pathways-committee.bullet.site/#:~:text=Stories%20Of%20Justice%2DInvolved%20Re%2DEntry" target="_blank">Click for the Stories of Justice-Involved Re-Entry</a></b></h2></text>
+                  <img src="4.png">
+                </a>
+              </div>
+            </div>
+            <!---------------------------------------------->
+
+          </div>
         </div>
+      </div>
 
-        <button class="carousel__button carousel__button--right">
-            <img src="./img/right-arrow.png" alt="">
-        </button>
-        <div class="carousel__nav">
-            <button class="carousel__indicator current-slide"></button>
-            <button class="carousel__indicator"></button>   
-            <button class="carousel__indicator"></button>
-            <button class="carousel__indicator"></button>   
-        </div>
-    </div>
-    <script src="./js/mainpage.js">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+        baguetteBox.run('.tz-gallery');
+      </script>
 
-        
-    </script>
-       
-</body>
+    </section>
+
+
+  </main>
+
+
 </html>
